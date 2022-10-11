@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NewslistComponent } from './newslist/newslist.component';
+import { HttpClientModule } from '@angular/common/http'
 
 const link:Routes=[
   {
@@ -22,7 +23,8 @@ const link:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(link)
+    RouterModule.forRoot(link),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
